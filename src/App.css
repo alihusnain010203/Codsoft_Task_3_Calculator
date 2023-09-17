@@ -1,0 +1,83 @@
+.App{
+  display: flex;
+  flex-direction: column;
+background-color: white;
+
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.calculator{
+  font-style: bold;
+  font-size: large;
+  display: grid;
+  justify-content: center;
+  /* align-items: center; */
+  grid-template-columns: 125px 125px 125px 125px;
+  background-color: grey;
+  height: 80vh;
+  width: 500px;
+}
+.input{
+  font-size: xx-large;
+  background-color: aliceblue;
+  height: 15vh;
+  width: 494px;
+}
+button{
+  font-size: larger;
+}
+.btn-Clear{
+
+grid-column: 1/4;
+grid-row: 1/2;
+}
+.btn-C{
+  grid-column: 4/5;
+  grid-row: 1/2;
+  }
+  .btn-EQUAL{
+    grid-column:2/4;
+
+  }
+  .btn-SUM{
+   grid-row: 2/3;
+   grid-column: 4/5;
+    
+  }
+  .btn-DIV{
+    grid-row: 5/6;
+   grid-column: 4/5;
+  }
+  .btn-SUB{
+    grid-row: 3/4;
+    grid-column: 4/5;
+     
+   }
+   .btn-MUL{
+    grid-row: 4/5;
+    grid-column: 4/5;
+     
+   }
+.btn-Clear ,.btn-SUM,.btn-C,.btn-DIV,.btn-SUB,.btn-MUL,.btn-EQUAL{
+  background-color: lightcoral;
+}
+
+button:hover{
+  translate: 2px 2px;
+}
+@media screen and (max-width:600px) {
+  .input{
+
+    width: 97vw;
+    border: 1px solid black;
+    /* border:2vw solid burlywood */
+  }
+
+  .calculator{
+    grid-template-columns: 24vw 25vw 25vw 24vw;
+    width: 99vw;
+    height: 85vh;
+  }
+}
